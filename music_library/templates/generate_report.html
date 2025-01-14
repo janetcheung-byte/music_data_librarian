@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Report</title>
+</head>
+<body>
+    <h1>Generate Report</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="output_dir">Specify Output Directory:</label>
+        <input type="text" id="output_dir" name="output_dir" placeholder="e.g., C:/Users/YourName/Reports/" required>
+        <br><br>
+        <button type="submit">Generate Report</button>
+    </form>
+</body>
+</html>
